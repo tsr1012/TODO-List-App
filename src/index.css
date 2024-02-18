@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .btn {
+    @apply bg-violet-800 hover:bg-violet-500 active:bg-violet-950 active:scale-90 [text-align:-webkit-center] transition-transform focus:ring ring-indigo-400 px-3 py-1.5 text-white text-sm font-medium rounded-full disabled:bg-gray-700 disabled:scale-100 disabled:cursor-not-allowed;
+  }
+
+  .input {
+    @apply bg-gray-200 border border-gray-400 text-gray-900 text-sm rounded-full focus:bg-white focus:ring-2 ring-indigo-400 px-3 p-1 outline-none w-full font-semibold;
+  }
+
+  .cb {
+    @apply w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 outline-none cursor-pointer;
+  }
+
+  .todoText {
+    @apply break-words overflow-hidden w-full;
+  }
+
+  .mainHeading {
+    @apply text-5xl max-md:text-3xl font-extrabold pb-7 bg-clip-text text-transparent bg-[linear-gradient(to_right,#1d1e33,#482878,#1d1e33)] bg-[length:200%_auto] animate-gradient;
+  }
+}
